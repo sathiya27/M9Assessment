@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+</head>
+<body>
+    <!-- //Using Xampp for web server, therefore my files are located locally in HtDocs folder -->
+    <h2>AJAX PHP Example</h2>
+    <button onclick="callPHPFunction()">Call PHP Function</button>
+    <div id="response"></div>
+
+    <script>
+        function callPHPFunction() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "process.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("response").innerHTML = xhr.responseText;
+                }
+            };
+
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

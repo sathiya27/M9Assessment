@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 10px #EEBF3D solid;
+    border-left:7px #EEBF3D solid;
+    border-bottom:6px #EEBF3D solid;
+    border-right:3px #EEBF3D solid;
+}
+th {
+    color: #fff;
+    background-color: #666699
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.btn-color {
+    color: #fff;
+    background-color: #6495ED;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.bold-text {
+    font-weight: bold;
+}
